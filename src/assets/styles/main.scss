@@ -1,0 +1,11 @@
+$padding:8.3%;
+$border-radius:10px;
+
+.padding{
+  padding-left:$padding;
+  padding-right:$padding;
+}
+
+.rounded-extra{
+  border-radius: $border-radius !important;
+}
