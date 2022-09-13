@@ -1,0 +1,54 @@
+.padding {
+  padding-left: 8.3%;
+  padding-right: 8.3%;
+}
+
+.rounded-extra {
+  border-radius: 10px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-blue {
+  background-color: #0154D4;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-lightgrey {
+  background-color: #F2F2F2;
+}
+
+.bg-darkgrey {
+  background-color: #272727;
+}
+
+.text-dark {
+  color: #333333;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-blue {
+  color: #0154D4;
+}
+
+.text-darkgrey {
+  color: #828282;
+}
+
+.text-grey {
+  color: #BDBDBD;
+}
+
+input {
+  border: none;
+}
+
+/*# sourceMappingURL=main.css.map */
