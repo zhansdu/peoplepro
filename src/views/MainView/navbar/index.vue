@@ -1,16 +1,13 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light padding position-sticky top-0">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light padding position-sticky top-0 py-3">
+    <div class="d-flex flex-fill justify-content-between">
       <router-link
         class="navbar-brand"
         :to="'/'"
       >
         <img
-          src="@/assets/images/icon.png"
+          src="@/assets/images/logo_blue.png"
         >
-        <span class="fs-4 fw-bolder fst-italic">
-          PeoplePro
-        </span>
       </router-link>
       <button
         class="navbar-toggler"
@@ -27,28 +24,18 @@
         id="navbarScroll"
         class="collapse navbar-collapse"
       >
+        <div class="ms-auto" />
         <router-link
-          class="fw-normal text-decoration-none me-4 ms-auto"
-          :to="{name:'home'}"
-        >
-          {{ $t('home') }}
-        </router-link>
-        <router-link
+          v-for="(link,index) in links"
+          :key="index"
           class="fw-normal text-decoration-none me-4"
-          :to="{name:'vacancies'}"
+          :to="link.link"
         >
-          {{ $t('vacancies') }}
-        </router-link>
-        <router-link
-          class="fw-normal text-decoration-none me-4"
-
-          :to="{name:'about'}"
-        >
-          {{ $t('about') }}
+          {{ $t(link.name) }}
         </router-link>
         <div class="ms-4">
-          <button class="btn btn-primary rounded-extra px-5 py-2">
-            {{ $t('apply') }}
+          <button class="btn btn-primary  rounded-extra px-5 py-2">
+            {{ $t('main_view.apply') }}
           </button>
         </div>
       </div>
@@ -56,8 +43,27 @@
   </nav>
 </template>
 <script>
+const links = [
+  {
+    name: "main_view.home",
+    link: "/"
+  },
+  {
+    name: "main_view.vacancies",
+    link: "vacancies"
+  },
+  {
+    name: "main_view.about",
+    link: "about"
+  }
+];
 export default {
 
+  setup () {
+    return {
+      links
+    };
+  }
 };
 </script>
 
