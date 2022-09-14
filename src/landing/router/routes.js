@@ -1,6 +1,6 @@
-import Landing from "@/views/Landing";
-import About from "@/views/About";
-import Vacancies from "@/views/Vacancies";
+import Landing from "@/landing/views/Landing";
+import About from "@/landing/views/About";
+import Vacancies from "@/landing/views/Vacancies";
 
 export default [
   {

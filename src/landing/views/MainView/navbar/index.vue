@@ -6,7 +6,7 @@
         :to="'/'"
       >
         <img
-          src="@/assets/images/logo_blue.png"
+          src="@/landing/assets/images/logo_blue.png"
         >
       </router-link>
       <button

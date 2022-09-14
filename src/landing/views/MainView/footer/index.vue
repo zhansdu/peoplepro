@@ -7,7 +7,7 @@
         :to="'/'"
       >
         <img
-          src="@/assets/images/logo_dark.png"
+          src="@/landing/assets/images/logo_dark.png"
         >
       </router-link>
       <form class="d-flex flex-column">

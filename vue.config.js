@@ -6,7 +6,11 @@ module.exports = defineConfig({
   pages: {
     index: {
       // entry for the page
-      entry: "src/main.js",
+      entry: "src/construction/main.js",
+      title: "PeoplePro"
+    },
+    construction: {
+      entry: "src/landing/main.js",
       title: "PeoplePro"
     }
   },
