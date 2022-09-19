@@ -6,6 +6,10 @@ $border-radius:10px;
   padding-right:$padding;
 }
 
+.transition{
+  transition: .3s;
+}
+
 .rounded-extra{
   border-radius: $border-radius;
 }

@@ -52,12 +52,22 @@
       class="text-center padding bg-darkgrey bottom-container-height d-flex align-items-center justify-content-between"
     >
       <div>
-        © 2022 • PeoplePro • All rights reserved
+        {{ $t('main_view.rights') }}
       </div>
-      <a
-        class="text-white"
-        href="https://mdbootstrap.com/"
-      >MDBootstrap.com</a>
+      <div class="d-flex">
+        <a
+          v-for="(icon,index) in icons"
+          :key="index"
+          :href="icon.link"
+          class="d-flex text-black bg-black align-items-center justify-content-center me-3 transition icon_wrapper"
+          target="_blank"
+        >
+          <img
+            :src="icon.src"
+            class="icon"
+          >
+        </a>
+      </div>
     </div>
   <!-- Copyright -->
   </footer>
@@ -87,10 +97,26 @@ const links = [
     link: "about"
   }
 ];
+
+const icons = [
+  {
+    link: "",
+    src: "/images/facebook.png"
+  },
+  {
+    link: "",
+    src: "/images/instagram.png"
+  },
+  {
+    link: "",
+    src: "/images/twitter.png"
+  }
+];
 export default {
   setup () {
     return {
-      links
+      links,
+      icons
     };
   }
 };
@@ -123,6 +149,25 @@ export default {
     position: absolute;
     right:7px;
     top:6px;
+  }
+
+  .icon_wrapper{
+    width: 2.5em;
+    height:2.5em;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .icon{
+    font-size:1.4em;
+  }
+  .icon_wrapper:hover{
+    transform:rotate(180deg);
+    background-color:#9E2629 !important
+  }
+  .icon_wrapper:hover > .icon{
+    transform:rotate(180deg);
+    font-size: 1.6em;
+    color:white;
   }
 
 </style>

@@ -3,6 +3,10 @@
   padding-right: 8.3%;
 }
 
+.transition {
+  transition: 0.3s;
+}
+
 .rounded-extra {
   border-radius: 10px;
 }
