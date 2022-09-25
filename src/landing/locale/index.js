@@ -5,13 +5,13 @@ import ru from "./ru";
 import kz from "./kz";
 
 const messages = {
-  en,
   ru,
+  en,
   kz
 };
 
 export default createI18n({
-  fallbackLocale: "en",
+  fallbackLocale: "ru",
   messages,
   silentTranslationWarn: true,
   silentFallbackWarn: true

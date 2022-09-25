@@ -1,6 +1,12 @@
 $padding:8.3%;
 $border-radius:10px;
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css');
+
+#app{
+  font-family: 'Lato' !important;
+}
+
 .padding{
   padding-left:$padding;
   padding-right:$padding;
@@ -22,12 +28,20 @@ $border-radius:10px;
   background-color: #0154D4;
 }
 
+.bg-darkblue{
+  background-color: #0147B4;
+}
+
 .bg-black{
   background-color: #000;
 }
 
 .bg-lightgrey{
   background-color: #F2F2F2;
+}
+
+.bg-grey{
+  background-color: #E0E0E0;;
 }
 
 .bg-darkgrey{

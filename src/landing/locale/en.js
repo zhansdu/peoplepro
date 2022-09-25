@@ -13,5 +13,9 @@ export default {
   },
   form: {
     email: "Email address"
+  },
+  home: {
+    find_dream_job: "Find your <br> Dream job",
+    find_dream_job_desc: "You can find a job or place a resume, so that employeers can find you"
   }
 };
