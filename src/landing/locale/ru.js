@@ -59,5 +59,8 @@ export default {
       }
 
     ]
+  },
+  vacancies: {
+    title: "Последние вакансии"
   }
 };

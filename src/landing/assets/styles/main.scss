@@ -1,6 +1,11 @@
 $padding:8.3%;
 $border-radius:10px;
 
+@import './fonts.scss';
+@import './colors.scss';
+
+// fonts
+// lato
 @import url('https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css');
 
 #app{
@@ -20,52 +25,10 @@ $border-radius:10px;
   border-radius: $border-radius;
 }
 
-.bg-white{
-  background-color: #fff;
-}
-
-.bg-blue{
-  background-color: #0154D4;
-}
-
-.bg-darkblue{
-  background-color: #0147B4;
-}
-
-.bg-black{
-  background-color: #000;
-}
-
-.bg-lightgrey{
-  background-color: #F2F2F2;
-}
-
-.bg-grey{
-  background-color: #E0E0E0;;
-}
-
-.bg-darkgrey{
-  background-color: #272727;
-}
-
-.text-dark{
-  color: #333333;
-}
-
-.text-black{
-  color: #000;
-}
-
-.text-blue{
-  color: #0154D4;
-}
-
-.text-darkgrey{
-  color: #828282;
-}
-
-.text-grey{
-  color: #BDBDBD;
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 input{

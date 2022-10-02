@@ -43,6 +43,8 @@
   </nav>
 </template>
 <script>
+import { defineComponent } from "vue";
+
 const links = [
   {
     name: "main_view.home",
@@ -57,14 +59,13 @@ const links = [
     link: "about"
   }
 ];
-export default {
-
+export default defineComponent({
   setup () {
     return {
       links
     };
   }
-};
+});
 </script>
 
 <style scoped>

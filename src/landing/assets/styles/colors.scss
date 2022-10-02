@@ -1,15 +1,21 @@
+@use "./color_variables.scss" as v;
+
 $colors: (
   "darkgrey": v.$darkgrey,
   "grey": v.$grey,
   "lightgrey": v.$lightgrey,
+
   "white": v.$white,
+  "darkwhite": v.$darkwhite,
+  
+  "lightblack": v.$lightblack,
   "black": v.$black,
-  "red": v.$red,
+  "darkblack": v.$darkblack,
+
   "lightblue": v.$lightblue,
   "blue": v.$blue,
   "darkblue": v.$darkblue,
-  "green": v.$green,
-  "orange": v.$orange,
+
   "transparent": v.$transparent,
   "inherit": v.$inherit,
 );

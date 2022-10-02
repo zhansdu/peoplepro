@@ -1,13 +1,18 @@
-$darkgrey: var(#272727);
-$grey: var(#E0E0E0);
-$lightgrey: var(#F2F2F2);
-$white: var(#fff);
-$black: var(#000);
-$red: var(--red);
+
+$darkgrey: var(--darkgrey);
+$grey: var(--grey);
+$lightgrey: var(--lightgrey);
+
+$white: var(--white);
+$darkwhite: var(--darkwhite);
+
+$lightblack: var(--lightblack);
+$black: var(--black);
+$darkblack: var(--darkblack);
+
 $lightblue: var(--lightblue);
-$blue: var(#0154D4);
-$darkblue: var(#0147B4);
-$green: var(--green);
-$orange: var(--orange);
+$blue: var(--blue);
+$darkblue: var(--darkblue);
+
 $transparent: var(--transparent);
 $inherit: var(--inherit);

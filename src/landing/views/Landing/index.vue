@@ -60,7 +60,7 @@
               {{ $t('home.joblessness.markets[0].desc') }}
             </div>
           </div>
-          <div class="bg-grey p-5 text-black w-350">
+          <div class="grey-bg p-5 text-black w-350">
             <div
               class="fw-bold"
               v-html="$t('home.joblessness.markets[1].title')"
@@ -92,7 +92,7 @@
 
     <!-- about us -->
 
-    <div class="bg-grey padding">
+    <div class="bg-lightgrey padding">
       <div class="p-5">
         <h1>About us</h1>
         <div class="d-flex justify-content-between">
@@ -153,8 +153,9 @@
   </div>
 </template>
 <script>
+import { defineComponent } from "vue";
 import slider from "./slider.vue";
-export default {
+export default defineComponent({
   components: { slider },
   data () {
     return {
@@ -163,41 +164,25 @@ export default {
       ]
     };
   }
-};
+});
 </script>
 <style scoped>
-.font-size-64{
-  font-size: 4em;
-}
+  .grey-bg{
+    background-color:#E0E0E0 !important;
+  }
 
-.font-size-42{
-  font-size:2.625em;
-}
+  .w-500{
+    /* width 500px */
+    width:31.25em;
+  }
 
-.font-size-14{
-  font-size:.875em;
-}
+  .w-400{
+    width:25em;
+  }
 
-.font-size-18{
-  font-size:1.125em;
-}
-
-.font-size-24{
-  font-size:1.5em;
-}
-
-.w-500{
-  /* width 500px */
-  width:31.25em;
-}
-
-.w-400{
-  width:25em;
-}
-
-.w-350{
-  /* width 350px; */
-  width:21.875em;
-}
+  .w-350{
+    /* width 350px; */
+    width:21.875em;
+  }
 
 </style>

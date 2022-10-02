@@ -1,6 +1,6 @@
 <template>
   <!-- Footer -->
-  <footer class="bg-black text-center text-white">
+  <footer class="bg-darkblack text-center text-white">
     <div class="d-flex align-items-center justify-content-between top-container-height padding border-bottom border-dark">
       <router-link
         class="navbar-brand"
@@ -49,7 +49,7 @@
       </div>
     </div>
     <div
-      class="text-center padding bg-darkgrey bottom-container-height d-flex align-items-center justify-content-between"
+      class="text-center padding bg-black bottom-container-height d-flex align-items-center justify-content-between"
     >
       <div>
         {{ $t('main_view.rights') }}
@@ -59,7 +59,7 @@
           v-for="(icon,index) in icons"
           :key="index"
           :href="icon.link"
-          class="d-flex text-black bg-black align-items-center justify-content-center me-3 transition icon_wrapper"
+          class="d-flex text-black bg-darkblack align-items-center justify-content-center me-3 transition icon_wrapper"
           target="_blank"
         >
           <img
@@ -75,6 +75,8 @@
 </template>
 
 <script>
+import { defineComponent } from "vue";
+
 const links = [
   {
     name: "main_view.home",
@@ -112,14 +114,14 @@ const icons = [
     src: "/images/twitter.png"
   }
 ];
-export default {
+export default defineComponent({
   setup () {
     return {
       links,
       icons
     };
   }
-};
+});
 </script>
 
 <style scoped>

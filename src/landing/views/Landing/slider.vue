@@ -2,8 +2,6 @@
   <div />
 </template>
 <script type="text/javascript">
-export default {
-};
 </script>
 <style scoped>
   .carousel-indicators,.card{
