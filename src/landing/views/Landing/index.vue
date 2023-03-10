@@ -83,18 +83,20 @@
     </div>
 
     <!-- end statistica -->
-
+    <div class="padding py-5">
+      <div class="div-center text-center text-black font-size-32 fw-bold pb-4">{{ $t('home.last_vacancies')}}</div>
     <!-- carousel 1 -->
 
-    <slider />
+     <slider/>
 
     <!-- end carousel 1 -->
 
     <!-- about us -->
+    </div>
 
-    <div class="bg-lightgrey padding">
+    <div class="bg-lightgrey padding py-5">
       <div class="p-5">
-        <h1>About us</h1>
+        <h1>{{$t('home.about')}}</h1>
         <div class="d-flex justify-content-between">
           <div class="w-400">
             <h1 class="text-blue">
@@ -155,8 +157,13 @@
 <script>
 import { defineComponent } from "vue";
 import slider from "./slider.vue";
+
+const vacancies = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 export default defineComponent({
-  components: { slider },
+  components: {
+    slider
+  },
   data () {
     return {
       links: [
@@ -169,6 +176,10 @@ export default defineComponent({
 <style scoped>
   .grey-bg{
     background-color:#E0E0E0 !important;
+  }
+  .div-center{
+    margin: auto;
+    width: 50%;
   }
 
   .w-500{

@@ -1,13 +1,13 @@
 <template>
   <div
-    class="d-flex flex-column p-4"
+    class="d-flex flex-column p-4 mr-4"
     :class="{border:border}"
     :style="'width:' + width+';height:'+height"
   >
     <!-- title -->
     <div class="d-flex">
       <div class="icon me-3">
-        Image
+        <img class="icon-img" src="images/rectangle-5-2@2x.png" alt="mc">
       </div>
       <div>
         <div class="font-size-14">
@@ -40,7 +40,7 @@
     </div>
     <div class="d-flex justify-content-center mt-3">
       <button class="btn bg-darkwhite outline-blue border-transparent rounded-extra p-2 px-5 font-size-12">
-        Otkliknis'
+        {{ $t('card.view') }}
       </button>
     </div>
   </div>
@@ -82,6 +82,10 @@ export default defineComponent({
     width:2.5em;
     height: 2.5em;
     border-radius:.3125em;
+  }
+
+  .icon-img{
+    width: inherit;
   }
   .line-clamp{
     display: -webkit-box;

@@ -34,9 +34,9 @@
           {{ $t(link.name) }}
         </router-link>
         <div class="ms-4">
-          <button class="btn btn-primary  rounded-extra px-5 py-2">
+          <router-link class="btn btn-primary  rounded-extra px-5 py-2" :to="'/new_cv'">
             {{ $t('main_view.apply') }}
-          </button>
+          </router-link>
         </div>
       </div>
     </div>

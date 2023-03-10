@@ -7,9 +7,9 @@
     </div>
     <div class="padding pt-5">
       <div class="text-blue mt-5">
-        <dropdown-vue :title="'Last vacancies'" />
+        <dropdown-vue :title="$t('vacancies.dropdown')" />
       </div>
-      <div class="grid mt-4 px-4">
+      <div class="grid mt-4 px-4 ">
         <card-vue
           v-for="(vacancy) in vacancies"
           :key="vacancy"
@@ -18,7 +18,7 @@
       </div>
       <div class="d-flex justify-content-center my-4">
         <button class="btn outline-blue py-2 px-4">
-          Show more
+          {{ $t('vacancies.show_more') }}
         </button>
       </div>
     </div>
@@ -45,6 +45,6 @@ export default defineComponent({
 <style scoped>
 .grid {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
 }
 </style>

@@ -32,9 +32,9 @@
     <div class="center-container-height padding">
       <div class="d-flex mt-5">
         <div>
-          <button class="btn btn-primary">
+          <router-link class="btn btn-primary" :to="'/new_cv'">
             {{ $t('main_view.apply') }}
-          </button>
+          </router-link>
         </div>
         <div class="m-auto">
           <router-link
