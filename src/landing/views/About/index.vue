@@ -1,6 +1,6 @@
 <template>
   <div class="text-start">
-    <div class="py-5 bg-grey padding text-darkgrey">
+    <div class="py-5 bg-grey-light padding text-darkgrey">
       <h1>
         {{ $t('about.title') }}
       </h1>

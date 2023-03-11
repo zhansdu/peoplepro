@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light padding position-sticky top-0 py-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light padding position-sticky top-0 py-3" style="z-index: 2">
     <div class="d-flex flex-fill justify-content-between">
       <router-link
         class="navbar-brand"

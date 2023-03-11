@@ -10,6 +10,20 @@
         <div class="font-size-24">
           {{ $t('home.find_dream_job_desc') }}
         </div>
+        <div class="d-flex mt-4">
+          <div class="btn_work">
+            <img src="images/icon-1@2x.png" alt="icon" class="icon">
+            <router-link class="btn bg-grey-light text-primary btn-pd me-5" :to="'/new_cv'">
+              {{$t('home.search_job')}}
+            </router-link>
+          </div>
+          <div class="btn_work">
+            <img src="images/group-69@2x.png" alt="icon" class="icon">
+            <router-link class="btn bg-grey-light text-primary btn-pd" :to="'/new_employer'">
+              {{$t('home.search_employer')}}
+            </router-link>
+          </div>
+        </div>
       </div>
       <img
         class="ms-auto"
@@ -87,7 +101,7 @@
       <div class="div-center text-center text-black font-size-32 fw-bold pb-4">{{ $t('home.last_vacancies')}}</div>
     <!-- carousel 1 -->
 
-     <slider/>
+      <Slider/>
 
     <!-- end carousel 1 -->
 
@@ -152,23 +166,23 @@
       </div>
     </div>
     <!-- end about us -->
+    <div class="padding py-5">
+      <div class="div-center text-center text-black font-size-32 fw-bold pb-4">{{ $t('home.partners')}}</div>
+      <Slider/>
+    </div>
   </div>
 </template>
 <script>
 import { defineComponent } from "vue";
 import slider from "./slider.vue";
 
-const vacancies = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
 export default defineComponent({
   components: {
-    slider
+    Slider: slider
   },
   data () {
     return {
-      links: [
-        "1", "2", "3", "4"
-      ]
+
     };
   }
 });
@@ -195,5 +209,16 @@ export default defineComponent({
     /* width 350px; */
     width:21.875em;
   }
-
+  .btn_work{
+    position: relative;
+  }
+  .icon{
+    position: absolute;
+    width: 1.3em;
+    top: 12px;
+    left: 40px;
+  }
+  .btn-pd{
+    padding: 10px 40px 10px 65px;
+  }
 </style>

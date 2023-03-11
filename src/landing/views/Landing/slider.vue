@@ -3,7 +3,7 @@
     :wrapAround="true"
   >
     <slide v-for="slide in vacancies" :key="slide">
-      {{ slide }}
+      <Card/>
     </slide>
 
     <template #addons>
@@ -15,6 +15,7 @@
 <script type="text/javascript">
   import "vue3-carousel/dist/carousel.css";
   import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+  import Card from "@/landing/components/Card.vue";
 
   // const vacancies = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -33,6 +34,7 @@
       Slide,
       Pagination,
       Navigation,
+      Card
     },
     mounted() {
     }

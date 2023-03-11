@@ -84,11 +84,11 @@ const links = [
   },
   {
     name: "main_view.jobs",
-    link: "jobs"
+    link: "new_cv"
   },
   {
     name: "main_view.people",
-    link: "people"
+    link: "new_employer"
   },
   {
     name: "main_view.vacancies",

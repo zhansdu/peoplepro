@@ -4,6 +4,7 @@
 <script>
 import { defineComponent } from "vue";
 import MainView from "./views/MainView";
+
 export default defineComponent({
   components: {
     MainView
@@ -44,7 +45,9 @@ export default defineComponent({
 }
 
 // some change
-
+.bg-grey-light{
+  background-color: #F2F2F2;
+}
 nav {
   padding: 30px;
 

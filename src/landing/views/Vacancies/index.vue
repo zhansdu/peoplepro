@@ -1,6 +1,6 @@
 <template>
   <div class="text-start">
-    <div class="py-5 bg-grey padding text-darkgrey">
+    <div class="py-5 bg-grey-light padding text-darkgrey">
       <h1>
         {{ $t('vacancies.title') }}
       </h1>
@@ -16,7 +16,7 @@
           class="mt-3"
         />
       </div>
-      <div class="d-flex justify-content-center my-4">
+      <div class="d-flex justify-content-center my-5">
         <button class="btn outline-blue py-2 px-4">
           {{ $t('vacancies.show_more') }}
         </button>
